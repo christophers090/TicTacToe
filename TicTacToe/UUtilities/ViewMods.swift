@@ -23,7 +23,7 @@ struct NavStackContainer: ViewModifier {
 }
 
 
-extension Viwe {
+extension View {
     public func inNavigationStack() -> some View {
         return self.modifier(NavStackContainer())
     }

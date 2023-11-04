@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		2460F6592AF5EBF00073B6A2 /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460F6582AF5EBF00073B6A2 /* TicTacToeApp.swift */; };
-		2460F65B2AF5EBF00073B6A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460F65A2AF5EBF00073B6A2 /* ContentView.swift */; };
+		2460F65B2AF5EBF00073B6A2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460F65A2AF5EBF00073B6A2 /* StartView.swift */; };
 		2460F65D2AF5EBF20073B6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2460F65C2AF5EBF20073B6A2 /* Assets.xcassets */; };
 		2460F6602AF5EBF20073B6A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2460F65F2AF5EBF20073B6A2 /* Preview Assets.xcassets */; };
+		2460F6672AF5EE230073B6A2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2460F6662AF5EE230073B6A2 /* Launch Screen.storyboard */; };
+		2460F66A2AF5EFF70073B6A2 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460F6692AF5EFF70073B6A2 /* GameModels.swift */; };
+		2460F66E2AF5FC820073B6A2 /* ViewMods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460F66D2AF5FC820073B6A2 /* ViewMods.swift */; };
+		2460F6712AF601A40073B6A2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460F6702AF601A40073B6A2 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2460F6552AF5EBF00073B6A2 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2460F6582AF5EBF00073B6A2 /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
-		2460F65A2AF5EBF00073B6A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2460F65A2AF5EBF00073B6A2 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		2460F65C2AF5EBF20073B6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2460F65F2AF5EBF20073B6A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2460F6662AF5EE230073B6A2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2460F6692AF5EFF70073B6A2 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		2460F66D2AF5FC820073B6A2 /* ViewMods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMods.swift; sourceTree = "<group>"; };
+		2460F6702AF601A40073B6A2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		2460F6572AF5EBF00073B6A2 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				2460F66F2AF601730073B6A2 /* GameScreen */,
+				2460F66C2AF5FC620073B6A2 /* UUtilities */,
 				2460F6582AF5EBF00073B6A2 /* TicTacToeApp.swift */,
-				2460F65A2AF5EBF00073B6A2 /* ContentView.swift */,
+				2460F65A2AF5EBF00073B6A2 /* StartView.swift */,
+				2460F6682AF5EFDB0073B6A2 /* Models */,
 				2460F65C2AF5EBF20073B6A2 /* Assets.xcassets */,
+				2460F6662AF5EE230073B6A2 /* Launch Screen.storyboard */,
 				2460F65E2AF5EBF20073B6A2 /* Preview Content */,
 			);
 			path = TicTacToe;
@@ -65,6 +77,30 @@
 				2460F65F2AF5EBF20073B6A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2460F6682AF5EFDB0073B6A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2460F6692AF5EFF70073B6A2 /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2460F66C2AF5FC620073B6A2 /* UUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				2460F66D2AF5FC820073B6A2 /* ViewMods.swift */,
+			);
+			path = UUtilities;
+			sourceTree = "<group>";
+		};
+		2460F66F2AF601730073B6A2 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2460F6702AF601A40073B6A2 /* GameView.swift */,
+			);
+			path = GameScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2460F6672AF5EE230073B6A2 /* Launch Screen.storyboard in Resources */,
 				2460F6602AF5EBF20073B6A2 /* Preview Assets.xcassets in Resources */,
 				2460F65D2AF5EBF20073B6A2 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2460F65B2AF5EBF00073B6A2 /* ContentView.swift in Sources */,
+				2460F65B2AF5EBF00073B6A2 /* StartView.swift in Sources */,
+				2460F66A2AF5EFF70073B6A2 /* GameModels.swift in Sources */,
 				2460F6592AF5EBF00073B6A2 /* TicTacToeApp.swift in Sources */,
+				2460F66E2AF5FC820073B6A2 /* ViewMods.swift in Sources */,
+				2460F6712AF601A40073B6A2 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -277,8 +317,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +347,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

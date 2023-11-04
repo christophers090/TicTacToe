@@ -12,6 +12,7 @@ struct StartView: View {
     @State private var yourName = ""
     @State private var otherName = ""
     @FocusState private var focus: Bool
+    @State private var startGame = false
     var body: some View {
         VStack {
             Picker("Select mode", selection: $gameType) {
@@ -47,6 +48,7 @@ struct StartView: View {
             if gameType != .peer {
                 Button("Start Game"){
                     focus = false
+                    startGame.toggle()
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(
@@ -61,6 +63,11 @@ struct StartView: View {
             
         }
         .padding()
+        .navigationTitle("XOXOXOXO")
+        .fullScreenCover(isPresented: $startGame) {
+            GameView()
+        }
+        .inNavigationStack()
     }
 }
 
