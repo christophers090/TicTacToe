@@ -1,10 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
-      "color" : {
-        "platform" : "universal",
-        "reference" : "systemCyanColor"
-      },
+      "filename" : "LaunchScreen.pdf",
       "idiom" : "universal"
     },
     {
@@ -14,10 +11,7 @@
           "value" : "dark"
         }
       ],
-      "color" : {
-        "platform" : "ios",
-        "reference" : "darkTextColor"
-      },
+      "filename" : "LaunchScreenDark.pdf",
       "idiom" : "universal"
     }
   ],
